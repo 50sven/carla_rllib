@@ -90,7 +90,7 @@ In order to fit your learning goals a few things may need to be adjusted. Here a
     - reset information defines scenarios comprising the initial state distributions of agents and obstacles
     - cooperation factor allows to use a cooperative reward function in multi-agent settings
     - frame skipping allows to perform actions more than once (rewards are accumulated)
-    - rendering enables a spectation window (see spectators.py in utils for independent spectation)
+    - rendering enables a spectation window (see [`spectators.py`](carla_rllib/utils/spectators.py) for independent spectation)
     - stable baselines creates gym.Spaces for actions and observations (stable baselines only for with single agent setups)
 - agent:
     - choose your agent type (continuous, steering, discrete)
@@ -99,8 +99,8 @@ In order to fit your learning goals a few things may need to be adjusted. Here a
 #### Environment: [`base_env.py`](carla_rllib/environments/carla_envs/base_env.py)
 - defines the basic gym functionalities for a single agent environment (step, reset render)
 - multi-agent functionality, obstacles, frame skipping and stable baseline support (gym.Space) are excluded in gym.Wrappers ([`env_wrapper.py`](carla_rllib/environments/carla_envs/env_wrapper.py))
-- adjust the class methods to your needs (mostly [`get_obs()`](https://github.com/50sven/carla_rllib/-/blob/master/carla_rllib/environments/carla_envs/base_env.py#L284) and [`get_reward()`](https://github.com/50sven/carla_rllib/-/blob/master/carla_rllib/environments/carla_envs/base_env.py#L293))
-- adjust the action/observation space in [`SpaceWrapper`](https://github.com/50sven/carla_rllib/-/blob/master/carla_rllib/environments/carla_envs/env_wrapper.py#L135) to enable learning with stable baselines if necessary
+- adjust the class methods to your needs (mostly [`get_obs()`](https://github.com/50sven/carla_rllib/blob/1df421fdf143251dcd15ee0626ee8512882fed72/carla_rllib/environments/carla_envs/base_env.py#L284) and [`get_reward()`](https://github.com/50sven/carla_rllib/blob/1df421fdf143251dcd15ee0626ee8512882fed72/carla_rllib/environments/carla_envs/base_env.py#L293))
+- adjust the action/observation space in [`SpaceWrapper`](https://github.com/50sven/carla_rllib/blob/1df421fdf143251dcd15ee0626ee8512882fed72/carla_rllib/environments/carla_envs/env_wrapper.py#L135) to enable learning with stable baselines
 
 #### Carla Wrapper: [`wrappers.py`](carla_rllib/carla_wrapper/wrappers.py)
 - use one of the provided wrappers or build your own wrapper with individual action control
@@ -108,7 +108,7 @@ In order to fit your learning goals a few things may need to be adjusted. Here a
 
 #### States: [`states.py`](carla_rllib/carla_wrapper/states.py)
 - stores the entire state data which is extendable
-- always adjust [`_get_sensor_data()`](https://github.com/50sven/carla_rllib/carla_wrapper/wrappers.py#L161) or [`_get_non_sensor_data()`](https://github.com/50sven/carla_rllib/-/blob/master/carla_rllib/carla_wrapper/wrappers.py#L171) of the wrapper
+- always adjust [`_get_sensor_data()`](https://github.com/50sven/carla_rllib/blob/1df421fdf143251dcd15ee0626ee8512882fed72/carla_rllib/carla_wrapper/wrappers.py#L161) or [`_get_non_sensor_data()`](https://github.com/50sven/carla_rllib/blob/1df421fdf143251dcd15ee0626ee8512882fed72/carla_rllib/carla_wrapper/wrappers.py#L171) of the wrapper
 
 #### Utils:
 - [`spectators.py`](carla_rllib/utils/spectators.py) provides a spectator class to observe/control (headless) training runs
