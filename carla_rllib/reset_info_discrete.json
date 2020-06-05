@@ -1,0 +1,83 @@
+{
+    "Town05": {
+        "Town05": {
+            "num_agents": 1,
+            "Agent_1": {
+                "X": 47.7,
+                "uniformIntervalX": [0.0, 0.0],
+                "Y": 208.7,
+                "uniformIntervalY": [0.0, 0.0],
+                "velocityX": 12.0,
+                "sigmaVelocityX": 2.0,
+                "desiredVelocity": 12.0,
+                "sigmaDesiredVelocity": 2.0,
+                "desiredLane": 0,
+                "rangeX": 0.0
+            },
+            "Agent_2": {
+                "X": 56.1,
+                "uniformIntervalX": [0.0, 0.0],
+                "Y": 208.9,
+                "uniformIntervalY": [0.0, 0.0],
+                "velocityX": 12.0,
+                "sigmaVelocityX": 2.0,
+                "desiredVelocity": 12.0,
+                "sigmaDesiredVelocity": 2.0,
+                "desiredLane": 1,
+                "rangeX": 0.0
+            },
+            "Obstacles": {
+                "static_enabled": false,
+                "dynamic_enabled": false
+            }
+        }
+    },
+    "Town06": {
+        "Town06": {
+            "num_agents": 1,
+            "Agent_1": {
+                "X": 312.75,
+                "uniformIntervalX": [0.0, 0.0],
+                "Y": 248.2,
+                "uniformIntervalY": [0.0, 0.0],
+                "velocityX": 12.0,
+                "sigmaVelocityX": 2.0,
+                "desiredVelocity": 12.0,
+                "sigmaDesiredVelocity": 2.0,
+                "desiredLane": 0,
+                "rangeX": 0.0
+            },
+            "Agent_2": {
+                "X": 312.75,
+                "uniformIntervalX": [0.0, 0.0],
+                "Y": 241.2,
+                "uniformIntervalY": [0.0, 0.0],
+                "velocityX": 12.0,
+                "sigmaVelocityX": 2.0,
+                "desiredVelocity": 12.0,
+                "sigmaDesiredVelocity": 2.0,
+                "desiredLane": 1,
+                "rangeX": 0.0
+            },
+            "Obstacles": {
+                "static_enabled": true,
+                "dynamic_enabled": false,
+                "static": [
+                    [335.5, 251.7], [342.5, 251.7], [349.5, 251.7], [356.5, 251.7], [363.5, 251.7],
+                    [370.5, 251.7], [377.5, 251.7], [384.5, 251.7], [391.5, 251.7],
+                    [370.5, 248.2], [377.5, 248.2], [384.5, 248.2], [391.5, 248.2],
+                    [335.5, 237.7], [342.5, 237.7], [349.5, 237.7], [356.5, 237.7], [363.5, 237.7],
+                    [370.5, 237.7], [377.5, 237.7], [384.5, 237.7], [391.5, 237.7], [398.5, 237.7],
+                    [405.5, 241.2], [412.5, 241.2],
+                    [419.5, 244.7], [426.5, 244.7], [433.5, 244.7], [440.5, 244.7],
+                    [454.5, 251.7], [461.5, 251.7], [468.5, 251.7], [475.5, 251.7], [482.5, 251.7],
+                    [475.5, 248.2], [482.5, 248.2]
+                ],
+                "dynamic": [
+                    [305.0, 237.7, 10.0],
+                    [305.0, 244.7, 10.0]
+                ]
+            }
+        }
+    }
+}

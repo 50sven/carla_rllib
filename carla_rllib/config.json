@@ -1,0 +1,31 @@
+{
+    "carla_server": {
+        "host": "localhost",
+        "port": 2000,
+        "map": "Town05",
+        "sync_mode": true,
+        "delta_sec": 0.05,
+        "no_rendering_mode": false
+    },
+    "environment": {
+        "reset_info": "~/no_backup/carla_rllib/carla_rllib/reset_info_continuous.json",
+        "scenario": "",
+        "coop_factor": 0.0,
+        "frame_skip": 0,
+        "render": true,
+        "stable_baselines": true
+    },
+    "agent": {
+        "agent_type": "continuous",
+        "camera_settings": {
+            "enabled": true,
+            "type_id": "rgb",
+            "spec": "raw",
+            "width": 128,
+            "height": 72,
+            "fov": 90.0,
+            "location": [1.3, 0.0, 1.4],
+            "rotation": [0.0, -25.0, 0.0]
+        }
+    }
+}
